@@ -1,0 +1,552 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #333333;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
+}
+
+a,
+a:visited {
+  color: #24292e;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  padding: 5px;
+  list-style: none;
+}
+
+p {
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: 'Pacifico';
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+
+header {
+  max-width: 100%;
+  background-color: #adabab;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 4%;
+  align-items: center;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+}
+
+header a {
+  padding-left: 5%;
+}
+
+/*-------------------------------------------
+フッター
+-------------------------------------------*/
+footer {
+  background-color: #24292e;
+  color: #fff;
+  font-size: 0.5rem;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/*-------------------------------------------
+メインビジュアル
+-------------------------------------------*/
+.main-visual {
+  width: 80%;
+  justify-content: center;
+  height: 250px;
+  /* background-color: #e2e2e2; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  text-transform: uppercase;
+  font-family: verdana;
+  font-size: 4em;
+  font-weight: 700;
+  color: #8af7ffb0;
+  text-shadow: 2px 2px 0px #000, -2px -2px 0px #000, -2px 2px 0px #000,
+    2px -2px 0px #000, 2px 0px 0px #000, -2px -0px 0px #000, 0px 2px 0px #000,
+    0px -2px 0px #000, 1px 13px 6px rgba(16, 16, 16, 0.4),
+    1px 17px 10px rgba(16, 16, 16, 0.2), 1px 20px 35px rgba(16, 16, 16, 0.2),
+    1px 25px 60px rgba(16, 16, 16, 0.4);
+}
+
+.main-visual p {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/*======
+プロフィール
+========*/
+#about h3 {
+  padding-top: 1.5rem;
+  font-size: 20px;
+}
+
+#about-name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: solid 3px rgb(0, 0, 0);
+}
+
+#about-detail p {
+  padding: 0.5rem;
+  padding-left: 1rem;
+}
+
+.git-img {
+  display: flex;
+  width: 100%;
+}
+.git-a {
+  display: flex;
+  width: 3em;
+}
+
+.pho {
+  animation: buttom 1s ease 1s 1 normal backwards;
+  margin: 0 1rem;
+  width: 25%;
+}
+
+section {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+}
+
+.profcard {
+  background-color: #cececec8;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  margin: 1rem auto 1.5rem;
+  max-width: 500px;
+  text-align: left;
+}
+
+.mydata {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  max-height: 100%;
+  padding-right: 1rem;
+  text-align: left;
+}
+
+/*-------------------------------------------
+Works
+-------------------------------------------*/
+.work-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.work-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: solid 3px rgb(0, 0, 0);
+  padding: 5%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.work-img {
+  display: flex;
+  max-width: 30%;
+  margin: 1px;
+}
+
+.workimg-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+}
+
+#works h3 {
+  margin-top: 25px;
+}
+
+#works img {
+  width: 100%;
+}
+
+.work-description {
+  margin-left: 10px;
+  width: 80%;
+}
+
+.work-description p {
+  margin-top: 10px;
+}
+
+.work-description h3 {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.work-item a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.work-item a:hover {
+  /* マウスオーバー時に色変更*/
+  opacity: 0.1;
+  background-color: #000000;
+}
+
+/*============
+ゲーム詳細
+==============*/
+.work1-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.work1-item {
+  position: relative;
+  display: flex;
+  background-color: #fff;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.work1-itemVideo {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.work1-description {
+  width: 85%;
+  border: solid 3px rgb(0, 0, 0);
+  padding: 0.8em;
+}
+
+.work1-description h3 {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.work1-about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.work1-about p {
+  box-sizing: border-box;
+  font-size: 100%;
+  padding-left: 1em;
+}
+
+.work1-about b {
+  background-color: #fefefe;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+.work1-list h2 {
+  font-size: 2rem;
+  margin-top: 0.3em;
+}
+
+.work1-title {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 1em;
+}
+
+/*==
+ホームボタン
+==*/
+.next_page_outer {
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.next_page {
+  display: flex;
+  justify-content: center;
+  background-color: #2c797eb0;
+  border: 0;
+  border-radius: 30px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  margin: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  width: 10rem;
+}
+
+.home-font {
+  color: #fff;
+  font-size: larger;
+}
+
+/*======
+全体
+========*/
+.Home_inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  max-width: 800px;
+  overflow: hidden;
+}
+
+/* -------------------------------------------
+クエリ
+-------------------------------------------*/
+@media screen and (max-width: 480px) {
+  /*-------------------------------------------
+    ヘッダー
+  -------------------------------------------*/
+  header {
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  header a {
+    padding-left: 0%;
+  }
+
+  /*-------------------------------------------
+    メインビジュアル
+    -------------------------------------------*/
+  .main-visual {
+    max-width: 100%;
+    height: 300px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* .main-visual {
+        width: 80%;
+        justify-content: center;
+        height: 250px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+
+  .main-visual h1 {
+    font-size: 50px;
+  }
+
+  /*======
+プロフィール
+========*/
+  #about h3 {
+    padding-top: 1.5rem;
+    font-size: 20px;
+  }
+
+  #about-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: solid 3px rgb(0, 0, 0);
+  }
+
+  #about-detail p {
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: 0.5rem;
+  }
+
+  .git-img {
+    display: flex;
+    width: 100%;
+  }
+  .git-a {
+    display: flex;
+    width: 5em;
+  }
+
+  .pho {
+    animation: buttom 1s ease 1s 1 normal backwards;
+    margin: 0 1rem;
+    width: 25%;
+  }
+
+  section {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profcard {
+    background-color: #cececec8;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    margin: 1rem auto 1.5rem;
+    max-height: 200px;
+    text-align: left;
+  }
+
+  .mydata {
+    min-width: 0;
+    padding-right: 0.5rem;
+    text-align: left;
+  }
+
+  /*============
+    ゲーム詳細
+    ==============*/
+  .work1-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .work1-item {
+    position: relative;
+    display: flex;
+    background-color: #fff;
+    border-radius: 16px;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+
+  .work1-itemVideo {
+    display: flex;
+
+    max-height: 10%;
+    background-color: #fff;
+  }
+
+  .work1-description {
+    width: 100%;
+    border: solid 3px rgb(0, 0, 0);
+    padding: 0.2em;
+  }
+
+  .work1-about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .work1-about p {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-size: 100%;
+    padding-left: 1em;
+    font-size: 0.7em;
+  }
+
+  .work1-about b {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-size: 0.7em;
+  }
+
+  .work1-list h2 {
+    font-size: 1.5rem;
+    margin-top: 0.1em;
+    margin-bottom: 0;
+  }
+
+  .work1-title {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  /*==
+    ホームボタン
+    ==*/
+  .next_page_outer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .Home_inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+  }
+}
