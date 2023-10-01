@@ -141,6 +141,15 @@ footer {
   width: 3em;
 }
 
+.prof-a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: small;
+  margin-right: 0.2em;
+  margin-bottom: 0.2em;
+}
+
 .pho {
   animation: buttom 1s ease 1s 1 normal backwards;
   margin: 0 1rem;
@@ -160,6 +169,7 @@ section {
   margin: 1rem auto 1.5rem;
   max-width: 500px;
   text-align: left;
+  position: relative;
 }
 
 .mydata {
@@ -437,6 +447,15 @@ Works
     display: flex;
     width: 5em;
   }
+  .prof-a {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 1px;
+    margin-right: 5em;
+    margin-bottom: 1em;
+  }
+  
 
   .pho {
     animation: buttom 1s ease 1s 1 normal backwards;
