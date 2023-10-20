@@ -64,10 +64,16 @@ header {
   top: 0;
 }
 
-header a {
-  padding-left: 5%;
+.headproducts{
+  text-align: right;
+  justify-content: space-between;
 }
 
+.headproduct{
+  font-size: 0.7rem;
+  padding: 0.5rem;
+  text-decoration:underline solid rgb(0, 0, 0)
+}
 /*-------------------------------------------
 フッター
 -------------------------------------------*/
@@ -391,6 +397,7 @@ Works
   header a {
     padding-left: 0%;
   }
+  
 
   /*-------------------------------------------
     メインビジュアル
@@ -447,14 +454,16 @@ Works
     display: flex;
     width: 5em;
   }
+
   .prof-a {
     position: absolute;
     right: 0;
     bottom: 0;
-    font-size: 1px;
-    margin-right: 5em;
-    margin-bottom: 1em;
+    font-size: 0.5rem;
+    margin-right: 0.2em;
+    margin-bottom: 0.2em;
   }
+  
   
 
   .pho {

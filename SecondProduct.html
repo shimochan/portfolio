@@ -14,6 +14,12 @@
     <!-- ヘッダー -->
     <header>
       <a href="index.html"><b>下川啓太の制作物紹介</b></a>
+      <div class="headproducts">
+      <a href="firstProduct.html" class="headproduct"><b>DragonQuest 0</b></a>
+      <a href="secondProduct.html" class="headproduct"><b>Tidy Stress</b></a>
+      <a href="thirdProduct.html" class="headproduct"><b>Pastgram</b></a>
+      <a href="fourthProduct.html" class="headproduct"><b>Who!</b></a>
+    </div>
     </header>
     <!--制作物-->
     <div class="Home_inner">
@@ -40,15 +46,14 @@
                 <div class="work1-about">
                   <b>概要：</b>
                   <p>
-                    自分が抱えている課題や仕事のTodoリストを作ることができ、その課題が解決されTodoリストから消去されるタイミングでストレス解消ゲームが遊べるというモバイルアプリである。これにより、課題が終了したときの解放感を増幅させ、たまったストレスも解消させようというもの。
-                    <br />
-                    ジャイロセンサーを利用したストレス解消ゲームはスマホを実際に振りおろすことで敵にダメージを与えたりできるようになっており、ストレスをより発散しやすいようなつくりになっている。
+                    Todoリストを作ることができます。また、課題が解決されTodoリストから消去されるタイミングでストレス解消ゲームが遊べます。これにより課題が終了したときの解放感を増幅させ、たまったストレスも解消させることができます。
+                    ストレス解消ゲームはスマホを実際に振りおろすことで敵にダメージを与えたりできるようになっており、ストレスをより発散しやすいようなUXになっています。モバイルアプリです。
                   </p>
                 </div>
                 <div class="work1-about">
                   <b>開発背景：</b>
                   <p>
-                    学校のレポートや課題などやることを淡々とこなしていくだけではストレスは少しづつたまるしつまらないと思った。そこで課題を解決したときに、ストレス発散ゲームという報酬を与えたら、楽しくストレスもなく自分のタスクを解消させていけるのではないかと思った。
+                    学校のレポートや課題などやることを淡々とこなしていくだけではストレスは少しづつたまるしつまらないと思いました。そこで課題を解決したときに、ストレス発散ゲームという報酬を与えたら、楽しくストレスもなく自分のタスクを解消させていけるのではないかと思いました。
                   </p>
                 </div>
                 <div class="work1-about">
@@ -64,6 +69,10 @@
                   <p>React Native,TypeScript,Recoil,Expo</p>
                 </div>
                 <div class="work1-about">
+                  <b>役割：</b>
+                  <p>企画・アイデア・デザイン・プログラミング・プレゼン</p>
+                </div>
+                <div class="work1-about">
                   <b>URL:</b>
                   <p>
                     <u>
@@ -71,14 +80,13 @@
                         https://testflight.apple.com/join/egcMxHp6
                       </a>
                     </u>
-                    <br />
                     TestFlightでのみ実装しました。
                   </p>
                 </div>
                 <div class="work1-about">
-                  <b>開発秘話：</b>
+                  <b>工夫点</b>
                   <p>
-                    コードを書くのに手こずったり、バグやエラーがなかなか直らなかったりと、このアプリを作るのにめちゃくちゃストレスがたまったが、無事に完成させることができたので、最後にこのストレス解消アプリを使ってすべて解消することができた。
+                    スマホを実際に振りおろすことでプレイする仕様にしており、ユーザーが楽しめるUXにしました。ExpoのDeviceMotionのaccelerationを使ってスマホの加速度を検知し計算することでこの挙動を実現しています。
                   </p>
                 </div>
               </ul>
